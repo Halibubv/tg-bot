@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>ВИНЛАНД — прототип Mini App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="prototype-layout">
+    <div class="app-frame">
+      <main id="app" class="app" aria-label="ВИНЛАНД Mini App"></main>
+    </div>
+    <aside class="prototype-tools" aria-label="Режимы прототипа">
+      <p class="prototype-label">ЛОКАЛЬНЫЙ ПРОТОТИП</p>
+      <p>Данные хранятся только в этом браузере. Уведомления и связь с сайтом здесь не работают.</p>
+      <div class="prototype-tool-actions">
+        <button type="button" id="prototype-reset">Сбросить пример</button>
+        <button type="button" id="prototype-fail">Имитировать ошибку сохранения</button>
+      </div>
+      <p id="prototype-tool-status" aria-live="polite"></p>
+    </aside>
+  </div>
+</body>
+</html>

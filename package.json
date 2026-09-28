@@ -1,0 +1,16 @@
+{
+  "name": "tg-bot",
+  "version": "0.1.0",
+  "private": true,
+  "description": "VINLAND, a private Telegram Mini App companion for daily training and nutrition.",
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "check": "node --test",
+    "check:coverage": "node --test --experimental-test-coverage"
+  }
+}

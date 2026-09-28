@@ -1,0 +1,30 @@
+/* ВИНЛАНД · токены одобренного северного направления */
+:root {
+  --color-bg: oklch(12% .017 229);
+  --color-app: oklch(17% .022 229);
+  --color-surface: oklch(21% .024 229);
+  --color-surface-hover: oklch(25% .025 229);
+  --color-line: oklch(37% .025 229);
+  --color-text: oklch(94% .01 210);
+  --color-muted: oklch(75% .018 219);
+  --color-accent: oklch(85% .045 212);
+  --color-accent-ink: oklch(18% .025 229);
+  --color-error: oklch(77% .12 24);
+  --color-shadow: oklch(0% 0 0 / .3);
+  --color-shadow-strong: oklch(0% 0 0 / .4);
+  --color-scrim: oklch(0% 0 0 / .64);
+  --font-display: "Jura", Arial, sans-serif;
+  --font-body: Arial, Helvetica, sans-serif;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --ease-out: cubic-bezier(.2, .8, .2, 1);
+  --dur-short: 150ms;
+}
