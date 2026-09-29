@@ -5,6 +5,8 @@ __pycache__/
 *.py[cod]
 .venv/
 node_modules/
+data/
+*.log
 dist/
 build/
 *.db

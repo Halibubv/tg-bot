@@ -1,6 +1,21 @@
-# ВИНЛАНД
+# ВИНЛАНД · Telegram Mini App
+
+![Node.js 24+](https://img.shields.io/badge/Node.js-24%2B-5FA04E?logo=nodedotjs&logoColor=white)
+![Telegram Mini App](https://img.shields.io/badge/Telegram-Mini%20App-26A5E4?logo=telegram&logoColor=white)
+[![Checks](https://github.com/Halibubv/tg-bot/actions/workflows/checks.yml/badge.svg)](https://github.com/Halibubv/tg-bot/actions/workflows/checks.yml)
 
 Самостоятельный Telegram Mini App-компаньон для короткой ежедневной отметки тренировки и итогов КБЖУ. Основные действия выполняются в Mini App: «Сегодня», «Журнал» и «Настройки».
+
+Это учебный проект для портфолио и дополнение к веб-приложению ВИНЛАНД. Пока он
+работает самостоятельно: синхронизация с основным сайтом — следующий этап, а не
+функция, которая уже реализована.
+
+| Сегодня | Журнал |
+| :---: | :---: |
+| ![Экран «Сегодня» с вымышленными данными](docs/media/mini-app-today.png) | ![Недельный журнал с вымышленными данными](docs/media/mini-app-journal.png) |
+
+*Снимки сделаны в локальном demo-режиме с вымышленными данными. Личные данные и
+Telegram-токен для них не использовались.*
 
 В проекте уже есть:
 
@@ -12,16 +27,21 @@
 - проверка Telegram Mini App `initData` на сервере в production;
 - безопасный локальный demo-режим без Telegram-токена.
 
-Старые материалы в `docs/product-brief.md`, `docs/architecture.md` и `docs/design/v1-booking-flow.md` описывают предыдущую гипотезу бота записи. Они сохранены как история и не управляют ВИНЛАНД.
+Ранние материалы о другой идее — боте для записи клиентов — сохранены в
+[`archive/booking-concept`](archive/booking-concept). Они не описывают текущую реализацию.
 
 ## Быстрый локальный запуск
 
 Нужен Node.js 24 или новее. Внешние npm-зависимости не нужны.
 
-```bash
+```powershell
+git clone https://github.com/Halibubv/tg-bot.git
+cd tg-bot
 Copy-Item .env.example .env
 node --env-file=.env src/index.js
 ```
+
+На macOS/Linux вместо `Copy-Item` используйте `cp .env.example .env`.
 
 Откройте `http://127.0.0.1:3000`. По умолчанию это `APP_MODE=demo`: сервер привязан только к loopback-адресу, не использует токен, не отправляет сообщения и хранит отдельные демонстрационные данные в `data/vinland-demo.sqlite`.
 
